@@ -1,0 +1,11 @@
+.btn:hover {
+    color:white;
+  }
+  
+  .btn {
+    color: #17a2b8;
+  }
+  
+  .price {
+    font-weight: bold;
+  }

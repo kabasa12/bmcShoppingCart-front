@@ -1,0 +1,31 @@
+
+<body>
+	<div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true" (change)="onCheckboxChange()">
+			<div class="login">
+				<form>
+					<label for="chk" aria-hidden="true">Login</label>
+					<input type="email" name="email" placeholder="Email" required="" [(ngModel)]="loginObj.email">
+					<input type="password" name="paswd" placeholder="Password" required="" [(ngModel)]="loginObj.password">
+					<button type="button" (click)="onLogin()">Login</button>
+					<div class="error">
+						{{errorMsg}}
+					</div>
+				</form>
+			</div>
+			<div class="signup">
+				<form>
+					<label for="chk" aria-hidden="true">Sign up</label>
+					<input type="email" name="email" placeholder="Email" required="" [(ngModel)]="signupObj.email">
+					<input type="password" name="pswd" placeholder="Password" required="" [(ngModel)]="signupObj.password">
+                    <input type="password" name="cpswd" placeholder="Confirm Password" required="" [(ngModel)]="signupObj.confirmPassword">
+					<button type="button" (click)="onSignUp()">Sign up</button>
+					<div class="error">
+						{{errorMsg}}
+					</div>
+				</form>
+			</div>
+
+			
+	</div>
+</body>
