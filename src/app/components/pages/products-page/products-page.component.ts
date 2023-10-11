@@ -13,7 +13,7 @@ export class ProductsPageComponent implements OnInit {
   constructor(private productService: ProductsService) { };
 
   ngOnInit(): void {
-    this.productService.getProductsOnSale().subscribe(response => {
+    this.productService.getProducts().subscribe(response => {
       if (response.success) {
         this.products = response.data;
       }
