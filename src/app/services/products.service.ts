@@ -12,8 +12,4 @@ export class ProductsService {
     getProducts():Observable<ApiResponse> {
         return this.http.get<ApiResponse>('http://localhost:3000/products');
     };
-
-    getProductsOnSale():Observable<ApiResponse> {
-        return this.http.get<ApiResponse>('http://localhost:3000/products-on-sale');
-    };
 }
