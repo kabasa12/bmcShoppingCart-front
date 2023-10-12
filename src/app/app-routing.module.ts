@@ -8,10 +8,7 @@ import { LoginPageComponent } from './components/pages/login-page/login-page.com
 import { LoginGuard } from './services/login.gurd';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: HomePageComponent
-  },
+  
   {
     path: 'home',
     component: HomePageComponent
@@ -39,7 +36,11 @@ const routes: Routes = [
   {
     path: 'login',
     component: LoginPageComponent
-  }
+  },
+  {
+    path: '',
+    component: HomePageComponent
+  },
 ];
 
 @NgModule({

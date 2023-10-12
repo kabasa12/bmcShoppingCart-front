@@ -14,10 +14,13 @@ export class ProductsPageComponent implements OnInit, OnDestroy{
   constructor(private productService: ProductsService) { };
 
   ngOnInit(): void {
-    this.sub = this.productService.getProducts().subscribe(response => {
-      if (response.success) {
-        this.products = response.data;
-      }
+    this.sub = this.productService.getProducts().subscribe({
+      next:response => {
+        if (response.success) {
+          this.products = response.data;
+        }
+      },
+      error: err => console.log(err)
     });
   };
 

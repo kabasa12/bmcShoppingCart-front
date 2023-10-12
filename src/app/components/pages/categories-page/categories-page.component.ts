@@ -26,7 +26,7 @@ export class CategoriesPageComponent  implements OnInit{
   };
   
   ngOnInit(): void {
-    console.log('ngOnInit of categories page');
+    //console.log('ngOnInit of categories page');
     this.initCategory();
   };
 
